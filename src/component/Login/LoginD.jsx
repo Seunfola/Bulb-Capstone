@@ -23,7 +23,7 @@ const LoginD = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const toastId = toast.loading(loading);
+    const toastId = toast.loading('loading...');
 
     const axios = require('axios');
     let data = JSON.stringify({
