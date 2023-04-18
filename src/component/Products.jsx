@@ -34,15 +34,15 @@ const Products = () => {
     return (
       <div
         id="carouselExampleCaptions"
-        class="carousel slide m-3"
+        className="carousel slide m-3"
         width="100%"
       >
-        <div class="carousel-indicators">
+        <div className="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="0"
-            class="active"
+            className="active"
             aria-current="true"
             aria-label="Slide 1"
           ></button>
@@ -59,38 +59,38 @@ const Products = () => {
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
             <img
               src={shoes}
-              class="d-block h-sm w-100"
+              className="d-block h-sm w-100"
               height="350px"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div className="carousel-caption d-none d-md-block">
               <h5 className="fw-bolder font-monospace fs-2">
                 Classic Sport Shoe
               </h5>
               <p>Check our product and select your items.</p>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src={laptop} class="d-block w-100" height="350px" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
+          <div className="carousel-item">
+            <img src={laptop} className="d-block w-100" height="350px" alt="..." />
+            <div className="carousel-caption d-none d-md-block">
               <h5 className="fw-bolder font-monospace fs-2">
                 High Grade Laptop
               </h5>
               <p>Check our product and select your items.</p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <img
               src={necklace}
-              class="d-block w-100"
+              className="d-block w-100"
               height="300px"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div className="carousel-caption d-none d-md-block">
               <h5 className="fw-bolder font-monospace fs-2">
                 Luxurious jewelery
               </h5>
@@ -99,22 +99,22 @@ const Products = () => {
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          className="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
         </button>
       </div>
     );
@@ -134,7 +134,7 @@ const Products = () => {
                   className="card-img-top"
                   alt={product.title}
                   height="200px"
-                  
+
                 />
                 <div className="card-body">
                   <h5 className="card-title mb-0 text-dark fs-6">

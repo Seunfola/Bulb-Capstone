@@ -1,21 +1,11 @@
 import axios from 'axios';
-import { axios } from "axios";
 
-
-const Register = (username, password) => {
+const register = (user) => {
     return axios
-        .post('https://emart-7or5.onrender.com/register', {
-            username,
-            password,
-        }).then((response) => {
-            if (response.data.accessToken) {
-                localStorage.setItem('user', JSON.stringify(response.data))
-            }
-            return response.data;
-        })
+        .post('https://emart-7or5.onrender.com/register', user);
 };
 const login = () => {
-    return  axios
+    return axios
         .post('https://emart-7or5.onrender.com/login', {
             username,
             password,
@@ -44,7 +34,7 @@ const getCurrentUser = () => {
 
 }
 const authService = {
-    Register,
+    register,
     login,
     logout,
     getCurrentUser,

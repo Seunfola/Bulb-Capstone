@@ -1,3 +1,4 @@
+import './App.css';
 import Navbar from "./component/Navbar";
 import Home from "./component/Home";
 import { Route, Routes } from "react-router-dom";
@@ -17,13 +18,14 @@ import { Toast, Toaster } from "react-hot-toast";
 function App() {
   return (
     <>
-      
-      <Toaster/>
+
+      <Toaster />
       <Fragment>
-        <Navbar/>
+        <Navbar />
         <Routes>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<LoginD />} />
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />

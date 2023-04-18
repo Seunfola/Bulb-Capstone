@@ -1,1 +1,8 @@
 
+.card-img {
+    object-fit: cover;
+}
+.carousel-item>img{
+     object-fit: cover;
+      /* padding-top: 56.25%; */
+}

@@ -15,9 +15,7 @@ const LoginD = () => {
   const Navigate = useNavigate();
 
   // const password = useRef();
-  console.log(user.current?.value)
-  useEffect(() => { userRef.current.focus(); },
-    [])
+  console.log(user)
   useEffect(() => { setErrMsg(''); }, [user, pass])
 
   const handleSubmit = (e) => {
@@ -27,13 +25,13 @@ const LoginD = () => {
 
     const axios = require('axios');
     let data = JSON.stringify({
-      "username": user.current?.value,
-      get "user_name"() {
-        return this["_user_name"];
-      },
-      set "username"(value) {
-        this["username"] = value;
-      },
+      "username": user,
+      // get "user_name"() {
+      //   return this["user_name"];
+      // },
+      // set "username"(value) {
+      //   this["username"] = value;
+      // },
       "password": pass
     });
 
@@ -93,7 +91,7 @@ const LoginD = () => {
                 ref={userRef}
                 type="text"
                 value={user}
-
+                autoFocus={true}
                 // ref={username}
                 class="form-control mb-1"
                 placeholder="Enter username"

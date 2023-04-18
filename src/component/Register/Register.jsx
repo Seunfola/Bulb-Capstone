@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./register.css";
 import toast from 'react-hot-toast';
 import { useNavigate } from "react-router-dom";
+import authService from "../auth.service";
 
 const Register = () => {
   const [firstName, setFirstName] = useState('');
@@ -21,7 +22,7 @@ const Register = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
 
-  
+
 
     let data = JSON.stringify({
       "first_name": firstName,
@@ -33,8 +34,14 @@ const Register = () => {
     });
 
 
+    authService.register(data).then((response) => {
 
-   
+      console.log(response)
+      if (response.data.token) {
+        localStorage.setItem('user', JSON.stringify(response.data))
+      }
+      return response.data;
+    })
   };
 
   return (
