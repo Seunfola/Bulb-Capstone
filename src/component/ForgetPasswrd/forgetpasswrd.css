@@ -1,0 +1,16 @@
+.form-gap {
+  padding-top: 50px;
+}
+.text-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    }
+
+    .form-group{
+      display: flex;
+      gap: 1rem;
+    }
+    

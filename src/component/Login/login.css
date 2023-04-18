@@ -1,0 +1,35 @@
+
+
+.auth-page-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 60%;
+ height: 80px;
+  margin:30px auto;
+}
+.container{
+  
+  margin: auto;
+}
+
+.form-label {
+  font-size: 17px;
+  font-family: calibri;
+}
+.form-check{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  
+}
+.form-check a{
+text-decoration: none;
+}
+
+body {
+  background: #ecf0fa !important;
+}
+.inputs-container a{
+text-decoration: none;
+}
